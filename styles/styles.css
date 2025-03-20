@@ -1,9 +1,19 @@
+ :root{
+  --heading-background-color : rgb(20, 8, 131);
+  --heading-text-color: white;
+  --width: 200px;
+  --height: auto;
+  
+
+ }
+
+
 nav {
-  background-color: rgb(20, 8, 131);
+  background-color: var(--heading-background-color);
   padding: 10px;
 }
 nav a {
-  color: white;
+  color:var(--heading-text-color);
   display: block;
   padding: 20px;
 }
@@ -13,10 +23,10 @@ h1 {
 }
 
 img {
-  width: 150px;
-  height: auto;
+  width:var(--width);
+  height: var(--height);
   border: 1px solid black;
-  padding: 2px;
+  padding: 0.2rem;
   box-shadow: 0 0 30px gray;
 }
 
@@ -28,16 +38,16 @@ main {
   max-width: 840px;
 }
 aside img {
-  width: 200px;
-  height: auto;
+  width: var(--width);
+  height: var(--height);
 }
 main img {
-  width: 150px;
-  height: auto;
+  width: 200px;
+  height:var(--height);
 }
 
 aside {
-  width: 20rem;
+  width:20rem;
   margin: 1rem;
   border: 1px solid rgb(0 0 0 / 0.2);
   padding: 1rem;
@@ -50,5 +60,4 @@ footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
-  text-decoration: line-through;
 }
