@@ -1,19 +1,22 @@
- :root{
-  --heading-background-color : rgb(20, 8, 131);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading-background-color: rgb(20, 8, 131);
   --heading-text-color: white;
   --width: 200px;
   --height: auto;
-  
-
- }
-
+}
 
 nav {
   background-color: var(--heading-background-color);
   padding: 10px;
 }
 nav a {
-  color:var(--heading-text-color);
+  color: var(--heading-text-color);
   display: block;
   padding: 20px;
 }
@@ -22,42 +25,74 @@ h1 {
   color: darkblue;
 }
 
-img {
-  width:var(--width);
-  height: var(--height);
-  border: 1px solid black;
-  padding: 0.2rem;
-  box-shadow: 0 0 30px gray;
-}
-
 p {
   padding: 0;
 }
 
+ /* okay let me see how this goes for  me , hmm thank God o omo  */
 main {
   max-width: 840px;
 }
+
+main ul {
+  clear: right;
+}
+
+main img {
+  display: block;
+  width: 150px;
+  padding: 2px;
+  height: var(--height);
+  float: right;
+  margin: 0 0 3rem 2rem;
+  box-shadow: 0 0 30px gray;
+  border: 1px solid black;
+}
+
 aside img {
   width: var(--width);
   height: var(--height);
-}
-main img {
-  width: 200px;
-  height:var(--height);
+  border: 1px solid black;
 }
 
 aside {
-  width:20rem;
-  margin: 1rem;
+  width: 20em;
   border: 1px solid rgb(0 0 0 / 0.2);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
   text-align: center;
+  position: relative;
 }
 
+aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
+}
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
+}
+
+.larger {
+  background-color: lightblue;
+  padding: 1rem;
+  margin: 5px;
+}
+
+.callout {
+  background-color: green;
+}
+
+/* Class Selectors */
+
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #b8b1b1;
+  color: #0e0c0c;
+  border: 1px solid black;
+}
+
+.indent {
+  padding-left: 2rem;
 }
