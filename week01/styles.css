@@ -1,28 +1,52 @@
+:root {
+    /* Colors */
+  --primary-color: darkblue; 
+  --secondary-color: rgb(13, 54, 54);
+  --text-color-light: white;
+  --text-color-dark: black;
+  --text-color-aside: rgb(219, 214, 214);
+  --border-color-dark: black;
+  --shadow-color: gray;
+
+  /* Spacing */
+  --padding-small: 10px;
+  --padding-medium: 20px;
+  --padding-none: 0; /* For p { padding: 0; } */
+  --margin-small: 10px;
+  --margin-top-large: 1rem;
+  --border-width-thin: 1px;
+}
+
+
+
+
+
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--padding-small);
 }
 
 nav a {
-    color: white;
+    color: var(--text-color-light);
     display: block;
-    padding: 20px;
+    padding: var(--padding-medium);
 }
 
 h1 {
-    color: darkblue;
+    color:var(--color);
 }
 
 p {
-    padding: 0;
+    padding: var(--padding-none);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border-width-thin) solid var(--border-color-dark);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--shadow-color);
 }
 
 main {
@@ -31,15 +55,15 @@ main {
 
 aside {
     width: 25rem;
-    margin: 10px;
-    border: 1px solid black;
-    padding: 10px;
-    background-color: rgb(13, 54, 54);
-    color: rgb(219, 214, 214);
+    margin: var(--margin-small);
+    border: var(--border-width-thin) solid var(--border-color-dark);
+    padding: var(--padding-small);
+    background-color: var(--secondary-color);
+    color: var(--text-color-aside);
 }
 
 footer {
-    margin-top: 1rem;
-    border-top: 1px solid black;
+    margin-top: var(--margin-top-large);
+    border-top: var(--border-width-thin) solid var(--border-color-dark);
     text-align: center;
 }
