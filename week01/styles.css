@@ -1,20 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 :root {
     /* Colors */
-  --primary-color: darkblue; 
-  --secondary-color: rgb(13, 54, 54);
-  --text-color-light: white;
-  --text-color-dark: black;
-  --text-color-aside: rgb(219, 214, 214);
-  --border-color-dark: black;
-  --shadow-color: gray;
+    --primary-color: #309b9b;
+    --secondary-color: #0d3636;
+    --text-color-light: white;
+    --text-color-dark: black;
+    --text-color-aside: rgb(219, 214, 214);
+    --border-color-dark: black;
+    --shadow-color: gray;
 
-  /* Spacing */
-  --padding-small: 10px;
-  --padding-medium: 20px;
-  --padding-none: 0; /* For p { padding: 0; } */
-  --margin-small: 10px;
-  --margin-top-large: 1rem;
-  --border-width-thin: 1px;
+    /* Spacing */
+    --padding-small: 10px;
+    --padding-medium: 20px;
+    --padding-none: 0;
+    /* For p { padding: 0; } */
+    --margin-small: 10px;
+    --margin-top-large: 1rem;
+    --border-width-thin: 1px;
+    --margin-bottom-small: 4px
 }
 
 
@@ -34,11 +43,12 @@ nav a {
 }
 
 h1 {
-    color:var(--color);
+    color: var(--text-color-dark);
+    padding: var(--padding-medium);
 }
 
-p {
-    padding: var(--padding-none);
+main p {
+    padding: var(--padding-medium);
 }
 
 main img {
@@ -47,10 +57,24 @@ main img {
     border: var(--border-width-thin) solid var(--border-color-dark);
     padding: 2px;
     box-shadow: 0 0 30px var(--shadow-color);
+    float: right;
+    margin: 0 0 3rem 2rem;
+
 }
 
 main {
     max-width: 800px;
+}
+
+main ul {
+    padding: 10px;
+    clear: both;
+}
+
+main a {
+    color: aliceblue;
+    text-decoration: none;
+
 }
 
 aside {
@@ -60,10 +84,36 @@ aside {
     padding: var(--padding-small);
     background-color: var(--secondary-color);
     color: var(--text-color-aside);
+    position: relative;
+    /* text-align: ceer; */
+}
+aside h2 {
+    position: absolute;
+    top: 55px;
+    left: 150px;
+    color: rgb(247, 247, 247);
+    background-color: var(--shadow-color);
+}
+aside img {
+    width: 100%;
+    height: auto;
+    margin-top: var(--margin-bottom-small);
+    margin-bottom: var(--margin-bottom-small);
 }
 
 footer {
     margin-top: var(--margin-top-large);
     border-top: var(--border-width-thin) solid var(--border-color-dark);
     text-align: center;
+}
+
+
+/* Class Selectors */
+
+.box {
+    margin: var(--margin-top-large);
+    border: var(--border-width-thin) solid var(--border-color-dark);
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    padding: 1.5rem;
 }
