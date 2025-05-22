@@ -1,0 +1,142 @@
+:root {
+    /* --- Color Palette --- */
+    /* Primary & Secondary Teals (Water, Nature, Primary UI elements) */
+    --primary-color: hsl(173, 100%, 24%, 0.9);
+    /* Deep Teal */
+    --secondary-color: #004D40;
+    /* Vibrant Teal */
+    --tertiary-color: #4DB6AC;
+    /* Aqua Blue */
+
+    /* Accent Color (Calls to Action, Highlights) */
+    --accent-color: #f5be88;
+    /* Vibrant Orange */
+    --accent1-color: #F57C00;
+    /* Vibrant Orange - For primary calls to action, strong highlights */
+    --accent2-color: #4DB6AC;
+    /* Aqua Blue - For secondary highlights, subtle accents, possibly lighter text */
+
+
+
+    /* Neutral Colors (Text, Backgrounds, Borders) */
+    --text-color: #212121;
+    /* Dark Gray for main text */
+    --background-color: #FFFFFF;
+    /* White for main backgrounds */
+    --light-gray: #f2f2f2;
+    /* Optional: for subtle section backgrounds or borders */
+
+    /* --- Typography --- */
+    --heading-font: 'Roboto', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+
+    /* --- Other Global Variables (Optional, but good practice) --- */
+    --max-width: 1200px;
+    /* Max width for content containers */
+    --spacing-unit: 1rem;
+    /* Base unit for margins/padding */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-color);
+
+}
+
+header a {
+    color: var(--light-gray);
+}
+
+body {
+    font-family: var(--text-font);
+    color: var(--accent1-color);
+}
+
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+section p {
+    margin: 3px;
+    padding: 0;
+    padding-top: 10px;
+    padding-right: 5px;
+    
+    
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    color: #f5f4f4;
+    opacity: 0.9;
+    background-color: var(--secondary-color);
+}
+
+
+article {
+    position: absolute;
+    top: 8rem;
+    padding: 4px;
+    border: 1px solid transparent;
+    background-color: rgba(77, 182, 172, 0.6);
+    color: #f5f4f4;
+    
+    
+}
+
+.hero article img {
+    float: right;
+    width: 135px;
+    height: 120px;
+}
+article h2{
+    color: #f2f2f2;
+}   
+
+.src-only {
+        position: absolute;
+        left: -9999px;
+        
+    }
