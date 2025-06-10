@@ -1,120 +1,138 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 :root {
-    /* Colors */
-    --primary-color: #309b9b;
-    --secondary-color: #0d3636;
-    --text-color-light: white;
-    --text-color-dark: black;
-    --text-color-aside: rgb(219, 214, 214);
-    --border-color-dark: black;
-    --shadow-color: gray;
+  /* Colors */
+  --primary-color: #309b9b;
+  --secondary-color: #0d3636;
+  --text-color-light: white;
+  --text-color-dark: black;
+  --text-color-aside: rgb(219, 214, 214);
+  --border-color-dark: black;
+  --shadow-color: gray;
 
-    /* Spacing */
-    --padding-small: 10px;
-    --padding-medium: 20px;
-    --padding-none: 0;
-    /* For p { padding: 0; } */
-    --margin-small: 10px;
-    --margin-top-large: 1rem;
-    --border-width-thin: 1px;
-    --margin-bottom-small: 4px
+  /* Spacing */
+  --padding-small: 10px;
+  --padding-medium: 20px;
+  --padding-none: 0;
+
+  /* For p { padding: 0; } */
+  --margin-small: 10px;
+  --margin-top-large: 1rem;
+  --border-width-thin: 1px;
+  --margin-bottom-small: 4px;
 }
 
-
-
-
-
+header,
+.grid,
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
 
 nav {
-    background-color: var(--primary-color);
-    padding: var(--padding-small);
+  background-color: var(--primary-color);
+  padding: var(--padding-small);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav a {
-    color: var(--text-color-light);
-    display: block;
-    padding: var(--padding-medium);
+  color: var(--text-color-light);
+  display: block;
+  padding: var(--padding-medium);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 h1 {
-    color: var(--text-color-dark);
-    padding: var(--padding-medium);
+  color: var(--text-color-dark);
+  padding: var(--padding-medium);
 }
 
 main p {
-    padding: var(--padding-medium);
+  padding: var(--padding-medium);
 }
 
 main img {
-    width: 150px;
-    height: auto;
-    border: var(--border-width-thin) solid var(--border-color-dark);
-    padding: 2px;
-    box-shadow: 0 0 30px var(--shadow-color);
-    float: right;
-    margin: 0 0 3rem 2rem;
-
-}
-
-main {
-    max-width: 800px;
+  width: 150px;
+  height: auto;
+  border: var(--border-width-thin) solid var(--border-color-dark);
+  padding: 2px;
+  box-shadow: 0 0 30px var(--shadow-color);
+  float: right;
+  margin: 0 0 3rem 2rem;
 }
 
 main ul {
-    padding: 10px;
-    clear: both;
+  padding: 10px;
+  clear: both;
 }
 
 main a {
-    color: aliceblue;
-    text-decoration: none;
-
+  color: aliceblue;
+  text-decoration: none;
 }
 
 aside {
-    width: 25rem;
-    margin: var(--margin-small);
-    border: var(--border-width-thin) solid var(--border-color-dark);
-    padding: var(--padding-small);
-    background-color: var(--secondary-color);
-    color: var(--text-color-aside);
-    position: relative;
-    /* text-align: ceer; */
+  width: 25rem;
+  margin: var(--margin-small);
+  border: var(--border-width-thin) solid var(--border-color-dark);
+  padding: var(--padding-small);
+  background-color: var(--secondary-color);
+  color: var(--text-color-aside);
+  position: relative;
+  /* text-align: ceer; */
 }
 aside h2 {
-    position: absolute;
-    top: 55px;
-    left: 150px;
-    color: rgb(247, 247, 247);
-    background-color: var(--shadow-color);
+  position: absolute;
+  top: 55px;
+  left: 150px;
+  color: rgb(247, 247, 247);
+  background-color: var(--shadow-color);
 }
 aside img {
-    width: 100%;
-    height: auto;
-    margin-top: var(--margin-bottom-small);
-    margin-bottom: var(--margin-bottom-small);
+  width: 100%;
+  height: auto;
+  margin-top: var(--margin-bottom-small);
+  margin-bottom: var(--margin-bottom-small);
 }
 
 footer {
-    margin-top: var(--margin-top-large);
-    border-top: var(--border-width-thin) solid var(--border-color-dark);
-    text-align: center;
+  margin-top: var(--margin-top-large);
+  border-top: var(--border-width-thin) solid var(--border-color-dark);
+  text-align: center;
 }
-
 
 /* Class Selectors */
 
 .box {
-    margin: var(--margin-top-large);
-    border: var(--border-width-thin) solid var(--border-color-dark);
-    background-color: var(--secondary-color);
-    color: var(--text-color-light);
-    padding: 1.5rem;
+  margin: var(--margin-top-large);
+  border: var(--border-width-thin) solid var(--border-color-dark);
+  background-color: var(--secondary-color);
+  color: var(--text-color-light);
+  padding: 1.5rem;
 }
 
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1 / 2;
+  grid-row: 1/2;
+}
