@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffffb6;
+  margin: 7px;
+  
+}
+
+
+
+form {
+    display: grid;
+    width:650px;
+    height: auto;
+    margin:  0 auto;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid silver;
+    border-radius: 0.5rem;
+}
+
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: navy;
+    margin-bottom: 1.5rem;
+}
+
+.column-div {
+    display: grid;
+    grid-template-columns: 1fr   ;
+    margin-bottom: 1.25rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+
+button {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    /* justify-self: start; */
+
+}
+
+.margin_box {
+    display: block;
+    justify-self: start;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    border-radius: 4px;
+}
