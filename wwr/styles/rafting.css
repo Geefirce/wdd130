@@ -41,8 +41,20 @@
   box-sizing: border-box;
 }
 
-header {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
   background-color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
 }
 
 header a {
@@ -55,12 +67,7 @@ body {
   max-width: var(--max-width);
 }
 
-header,
-main,
-footer {
-  width: 840px;
-  margin: 0 auto;
-}
+
 
 h1,
 h2 {
@@ -68,7 +75,7 @@ h2 {
   color: var(--primary-color);
 }
 
-nav,
+
 p,
 section,
 article {

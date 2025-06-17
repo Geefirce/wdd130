@@ -1,0 +1,224 @@
+:root {
+  /* --- Color Palette --- */
+  /* Primary & Secondary Teals (Water, Nature, Primary UI elements) */
+  --primary-color: hsl(173, 100%, 24%, 0.9);
+  /* Deep Teal */
+  --secondary-color: #004d40;
+  /* Vibrant Teal */
+  --tertiary-color: #4db6ac;
+  /* Aqua Blue */
+
+  /* Accent Color (Calls to Action, Highlights) */
+  --accent-color: #f5be88;
+  /* Vibrant Orange */
+  --accent1-color: #f57c00;
+  /* Vibrant Orange - For primary calls to action, strong highlights */
+  --accent2-color: #4db6ac;
+  /* Aqua Blue - For secondary highlights, subtle accents, possibly lighter text */
+
+  /* Neutral Colors (Text, Backgrounds, Borders) */
+  --text-color: #212121;
+  /* Dark Gray for main text */
+  --background-color: #ffffff;
+  /* White for main backgrounds */
+  --light-gray: #f2f2f2;
+  /* Optional: for subtle section backgrounds or borders */
+
+  /* --- Typography --- */
+  --heading-font: "Roboto", sans-serif;
+  --text-font: "Roboto", sans-serif;
+
+  /* --- Other Global Variables (Optional, but good practice) --- */
+  --max-width: 1200px;
+  /* Max width for content containers */
+  --spacing-unit: 1rem;
+  /* Base unit for margins/padding */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  background: #f7f7f7;
+  color: #333;
+  font-family: var(--text-font);
+  color: var(--accent1-color);
+  max-width: var(--max-width);
+}
+
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+  margin: 0 1rem;
+  color: var(--light-gray);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+.contact-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.contact-boxes .box {
+  flex: 1 1 300px;
+  background: #eef7ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact-boxes button {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.location-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.location-section .address {
+  background: #fff;
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(241, 240, 240, 0.05);
+}
+
+.employees {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.employees h2 {
+  margin-bottom: 1rem;
+}
+
+.employees figure {
+  display: inline-block;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.employees figure:hover {
+  transform: scale(1.05);
+}
+
+.employees img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.sales-contacts {
+  background: #eef7ff;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sales-contacts .region {
+  flex: 1 1 200px;
+}
+
+.contact-form {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer .socialmedia a {
+  display: inline-block;
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer img {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.contact-boxes {
+  display: grid;
+}
+
+.sales-contacts {
+  display: grid;
+}
