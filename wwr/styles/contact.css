@@ -88,6 +88,11 @@ h2 {
   flex-wrap: wrap;
 }
 
+.address h2 {
+    padding: 5px;
+
+}
+
 .contact-boxes .box {
   flex: 1 1 300px;
   background: #eef7ff;
