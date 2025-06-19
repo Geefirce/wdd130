@@ -1,0 +1,195 @@
+:root {
+  /* Primary & Secondary Teals (Water, Nature, Primary UI elements) */
+  --primary-color: hsl(173, 100%, 24%, 0.9);
+  /* Deep Teal */
+  --secondary-color: #004d40;
+  /* Vibrant Teal */
+  --tertiary-color: #4db6ac;
+  /* Aqua Blue */
+
+  /* Accent Color (Calls to Action, Highlights) */
+  --accent-color: #f5be88;
+  /* Vibrant Orange */
+  --accent1-color: #f57c00;
+  --accent2-color: #4db6ac;
+
+  /* Neutral Colors (Text, Backgrounds, Borders) */
+  --text-color: #212121;
+  /* Dark Gray for main text */
+  --background-color: #ffffff;
+  /* White for main backgrounds */
+  --light-gray: #f2f2f2;
+  /* Optional: for subtle section backgrounds or borders */
+
+  /* --- Typography --- */
+  --heading-font: "Roboto", sans-serif;
+  --text-font: "Roboto", sans-serif;
+
+  --max-width: 1200px;
+  /* Max width for content containers */
+  --spacing-unit: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  background: #dbcaca;
+  color: #333;
+  font-family: var(--text-font);
+  color: var(--accent1-color);
+  max-width: var(--max-width);
+}
+
+.container {
+  max-width: var(--max-width) !important;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+  margin: 0 1rem;
+  color: var(--light-gray);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+.cta {
+  background: linear-gradient(rgba(48, 47, 47, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/raftingheroimg.webp") center/cover no-repeat;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: rgb(197, 195, 195);
+  border-radius: 8px;
+  margin: 3rem auto;
+  max-width: 1000px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.cta a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.trip-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.trip-card h3 {
+  font-size: 1.3rem;
+  color: #00796b;
+  margin-bottom: 0.5rem;
+}
+
+.trip-card p {
+  font-size: 1rem;
+  color: #444;
+  padding: 0 1rem;
+}
+
+.trip-table {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.trip-table th {
+  background-color: #00796b;
+  color: white;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer .socialmedia a {
+  display: inline-block;
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer img {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.contact-boxes {
+  display: grid;
+}
+
+.sales-contacts {
+  display: grid;
+}
+
+.wireframe-link a {
+  margin: 10px;
+  text-decoration: none;
+  color: var(--light-gray);
+}

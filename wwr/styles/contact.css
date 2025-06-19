@@ -1,6 +1,4 @@
 :root {
-  /* --- Color Palette --- */
-  /* Primary & Secondary Teals (Water, Nature, Primary UI elements) */
   --primary-color: hsl(173, 100%, 24%, 0.9);
   /* Deep Teal */
   --secondary-color: #004d40;
@@ -28,11 +26,9 @@
   --heading-font: "Roboto", sans-serif;
   --text-font: "Roboto", sans-serif;
 
-  /* --- Other Global Variables (Optional, but good practice) --- */
   --max-width: 1200px;
   /* Max width for content containers */
   --spacing-unit: 1rem;
-  /* Base unit for margins/padding */
 }
 
 * {
@@ -43,7 +39,7 @@
 
 body {
   line-height: 1.6;
-  background: #f7f7f7;
+  background: #dbcaca;
   color: #333;
   font-family: var(--text-font);
   color: var(--accent1-color);
@@ -164,20 +160,19 @@ h2 {
 }
 
 h2 {
-    align-self: center;
+  align-self: center;
 }
 
 h3 {
-    grid-column: 1/-1;
-    padding-bottom: 0.9rem;
-    font-weight: bolder;
-    font-size: larger;
+  grid-column: 1/-1;
+  padding-bottom: 0.9rem;
+  font-weight: bolder;
+  font-size: larger;
 }
 .region {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-
 
 .contact-form {
   padding: 3rem 2rem;
@@ -263,7 +258,7 @@ h3 {
 }
 
 .wireframe-link a {
-    margin: 10px;
-    text-decoration: none;
-    color: var(--light-gray);
+  margin: 10px;
+  text-decoration: none;
+  color: var(--light-gray);
 }

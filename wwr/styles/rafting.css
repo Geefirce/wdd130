@@ -1,5 +1,4 @@
 :root {
-  /* --- Color Palette --- */
   /* Primary & Secondary Teals (Water, Nature, Primary UI elements) */
   --primary-color: hsl(173, 100%, 24%, 0.9);
   /* Deep Teal */
@@ -22,17 +21,14 @@
   --background-color: #ffffff;
   /* White for main backgrounds */
   --light-gray: #f2f2f2;
-  /* Optional: for subtle section backgrounds or borders */
 
   /* --- Typography --- */
   --heading-font: "Roboto", sans-serif;
   --text-font: "Roboto", sans-serif;
 
-  /* --- Other Global Variables (Optional, but good practice) --- */
   --max-width: 1200px;
   /* Max width for content containers */
   --spacing-unit: 1rem;
-  /* Base unit for margins/padding */
 }
 
 * {
@@ -65,16 +61,14 @@ body {
   font-family: var(--text-font);
   color: var(--accent1-color);
   max-width: var(--max-width);
+  background: #dbcaca;
 }
-
-
 
 h1,
 h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
-
 
 p,
 section,
@@ -171,7 +165,6 @@ article h2 {
   border-radius: 10px;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .history__p {
@@ -186,7 +179,6 @@ article h2 {
   padding: 2rem;
 }
 
-
 .adventure__grid h2 {
   grid-column: 1/-1;
   text-align: center;
@@ -196,7 +188,6 @@ article h2 {
 .adventure__grid figure {
   margin: 0;
 }
-
 
 .adventure__grid img {
   width: 100%;
@@ -210,21 +201,29 @@ article h2 {
   font-size: 0.9rem;
 }
 
-
 .footer {
- padding: 1rem 2rem;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
 }
 
-.socialmedia {
-  display: flex;
-  justify-content: flex-end; /* Align right */
-  gap: 1rem;
+.footer .socialmedia a {
+  display: inline-block;
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
 }
 
-.socialmedia  img  {
-  width: 30px;
-  height: 30px;
+.footer img {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
-
-
+.wireframe-link a {
+  margin: 10px;
+  text-decoration: none;
+  color: var(--light-gray);
+}

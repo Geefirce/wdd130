@@ -1,6 +1,4 @@
 :root {
-  /* --- Color Palette --- */
-  /* Primary & Secondary Teals (Water, Nature, Primary UI elements) */
   --primary-color: hsl(173, 100%, 24%, 0.9);
   /* Deep Teal */
   --secondary-color: #004d40;
@@ -39,7 +37,7 @@
 
 body {
   line-height: 1.6;
-  background: #e4e2e2;
+  background: #dbcaca;
   color: #333;
   font-family: var(--text-font);
   color: var(--accent1-color);
